@@ -1,0 +1,264 @@
+:root {
+    --bgcolor-blue: #0A3871;
+    --bgcolor-body: #E5E5E5;
+    --font-color-gray: #495057;
+    --font-color-gray2: #343A40;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: var(--bgcolor-body);
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: var(--bgcolor-blue);
+}
+
+/* ----------------------------HEADER---------------------------- */
+.container-header, .container-main {
+    padding: 1.2em;
+}
+
+/* ----------------------------MAIN---------------------------- */
+.container-section-encrypt-text {
+    margin-bottom: 2.2em;
+}
+
+.container-buttons__btn, .container-info-result-encrypt-text__btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    margin-bottom: 1.3em;
+    border-radius: 4em;
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    -ms-border-radius: 4em;
+    -o-border-radius: 4em;
+    background-color: var(--bgcolor-blue);
+    color: white;
+    cursor: pointer;
+}
+
+.container-buttons__btn--color, .container-info-result-encrypt-text__btn--color {
+    border: 1px solid var(--bgcolor-blue);
+    background-color: transparent;
+    color: var(--bgcolor-blue);
+}
+
+.container-info-encrypt-text {
+    display: flex;
+    font-size: .8rem;
+    color: var(--font-color-gray);
+}
+
+.container-info-encrypt-text__icon {
+    font-size: .9rem;
+    margin-right: .3em;
+}
+
+.container-form-text {
+    margin-bottom: 2.5em;
+}
+
+.container-form-text__textarea, .container-info-result-encrypt-text__textarea {
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+    resize: none;
+    outline: none;
+    border:none;
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    margin: 0;
+    padding-left: 0;
+    text-align: left;
+    color: var(--bgcolor-blue);
+}
+
+.container-info-result-encrypt-text__textarea {
+    height: 200px;
+    margin-bottom: 1.9em;
+}
+
+.container-section-result {
+    margin-bottom: 1.2em;
+}
+
+.container-info-result-encrypt-text {
+    background-color: white;
+    text-align: center;
+    padding: 1em;
+    border-radius: .7em;
+    -webkit-border-radius: .7em;
+    -moz-border-radius: .7em;
+    -ms-border-radius: .7em;
+    -o-border-radius: .7em;
+}
+
+.container-info-result-encrypt-text__img {
+    display: none;
+}
+
+.container-info-result-encrypt-text__paragrahp {
+    color: var(--font-color-gray);
+}
+
+.container-info-result-encrypt-text__paragrahp--size {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: var(--font-color-gray2);
+}
+
+.container-info-result-encrypt-text--ocult {
+    display: none;
+}
+
+.container-info-result-encrypt-text--show {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-info-result-encrypt-text__btn {
+    margin-top: auto;
+    margin-bottom: .5em;
+}
+
+.container-info-result-encrypt-text__btn--color {
+    margin-top: 1em;
+}
+
+/* ----------------------------ESTILOS FOOTER---------------------------- */
+.container-footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: var(--bgcolor-blue);
+    color: white;
+    height: 55px;
+    line-height: 55px;
+}
+
+.container-info-footer {
+    margin: 0;
+}
+
+.container-info-footer__link {
+    color: white;
+}
+
+/* ----------------------------MEDIA QUERIES---------------------------- */
+@media screen and (min-width: 600px) {
+    .container-header, .container-main {
+        padding: 1.8em;
+    }
+    .container-info-encrypt-text {
+        font-size: .9rem;
+    }
+    .container-info-encrypt-text__icon {
+        font-size: 1rem;
+        margin-right: .4em;
+    }
+    .container-buttons__btn {
+        display: inline-block;
+        width: calc((99% - 1.2em) / 2);
+    }
+    .container-buttons__btn--color {
+        margin-left: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container-main {
+        display: grid;
+        height: 73vh;
+        grid-template-columns: 56% 40%;
+        -moz-column-gap: 2em;
+             column-gap: 2em;
+        padding-bottom: 0;
+    }
+    .container-info-result-encrypt-text__img {
+        display: block;
+    }
+    .container-info-result-encrypt-text {
+        width: 350px;
+        height: 100%;
+        margin-left: auto;
+    }
+    .container-section-encrypt-text {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .container-buttons {
+        margin-top: auto;
+    }
+    .container-buttons__btn {
+        margin-bottom: 0;
+    }
+    .container-section-result {
+        margin-bottom: 0;
+    }
+    .container-info-result-encrypt-text__textarea {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-main {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 59% 35%;
+        -moz-column-gap: 2.7em;
+             column-gap: 2.7em;
+        padding: 0;
+        padding-top: 1em;
+    }
+    .container-header {
+        padding: 2.5em;
+        padding-bottom: 0;
+    }
+    .container-buttons, .container-form-text {
+        width: 600px;
+    }
+    .container-form-text__textarea, .container-info-result-encrypt-text__textarea {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container-main {
+        width: 68%;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: 59% 35%;
+        -moz-column-gap: 2.7em;
+             column-gap: 2.7em;
+        padding: 0;
+        padding-top: 1em;
+    }
+    .container-footer {
+        margin-top: auto;
+        text-align: center;
+        background-color: var(--bgcolor-blue);
+        color: white;
+        height: 60px;
+        line-height: 60px;
+    }
+    
+    .container-info-footer {
+        margin: 0;
+    }
+    
+    .container-info-footer__link {
+        color: white;
+    }
+    .container-form-text__textarea {
+        font-size: 2rem;
+    }
+    .container-info-result-encrypt-text {
+        padding: 1.6em;
+    }
+}

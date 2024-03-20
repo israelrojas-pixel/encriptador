@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="encriptador.css">
+
+    <title>Challengue Encriptador</title>
+</head>
+
+<header class="container-header">
+    <img src="img/logo2.png" alt="" decoding="async" loading="lazy" class="container-header__img">
+</header>
+
+<main class="container-main">
+    <section class="container-section-encrypt-text">
+        <form class="container-form-text">
+            <lt-mirror contenteditable="false" class="lt--mac-os" style="display: none;" data-lt-linked="1"><lt-highlighter contenteditable="false" class="lt--mac-os" style="display: none;"><lt-div spellcheck="false" class="lt-highlighter__wrapper" style="width: 600px !important; height: 358.4px !important; transform: none !important; transform-origin: 300px 179.2px 0px !important;"><lt-div class="lt-highlighter__scroll-element" style="top: 0px !important; left: 0px !important; width: 600px !important; height: 358px !important;"></lt-div></lt-div></lt-highlighter><lt-div spellcheck="false" class="lt-mirror__wrapper notranslate" style="border: 0px rgb(10, 56, 113) !important; border-radius: 0px !important; direction: ltr !important; font: 32px / 44.8px &quot;Quattrocento Sans&quot;, sans-serif !important; font-synthesis: weight style small-caps position !important; hyphens: manual !important; letter-spacing: normal !important; line-break: auto !important; margin: 0px !important; padding: 0px !important; text-align: left !important; text-decoration: rgb(10, 56, 113) !important; text-indent: 0px !important; text-rendering: optimizelegibility !important; text-transform: none !important; transform: none !important; transform-origin: 300px 179.2px 0px !important; unicode-bidi: normal !important; white-space: pre-wrap !important; word-spacing: 0px !important; overflow-wrap: break-word !important; writing-mode: horizontal-tb !important; width: 600px !important; height: 358.4px !important;" data-lt-scroll-top="0" data-lt-scroll-left="0" data-lt-scroll-top-scaled="0" data-lt-scroll-left-scaled="0" data-lt-scroll-top-scaled-and-zoomed="0" data-lt-scroll-left-scaled-and-zoomed="0"><lt-div class="lt-mirror__canvas" style="margin-top: 0px !important; margin-left: 0px !important; width: 600px !important; height: 358px !important;">Hola</lt-div></lt-div><lt-div class="lt-mirror__measurer"></lt-div></lt-mirror><textarea name="mensaje" id="mensaje_a_convertir" cols="30" rows="8" placeholder="Ingrese el texto aqui" class="container-form-text__textarea" autofocus="" data-lt-tmp-id="lt-776524" spellcheck="false" data-gramm="false"></textarea>
+        </form>
+
+        <article class="container-buttons">
+            <p class="container-info-encrypt-text">
+                <i class="fa-solid fa-circle-info container-info-encrypt-text__icon" aria-hidden="true"></i>
+                Solo letras minúsculas y sin acentos
+            </p>
+
+            <button class="container-buttons__btn" id="btn-encriptar-texto">
+                Encriptar
+            </button>
+
+            <button class="container-buttons__btn container-buttons__btn--color" id="btn-desencriptar-texto">
+                Desencriptar
+            </button>
+        </article>
+    </section>
+
+    <section class="container-section-result">
+        <article class="container-info-result-encrypt-text container-info-result-encrypt-text--ocult" id="article-text-info">
+            <img src="assets/images/Muñeco.webp" alt="" decoding="async" loading="lazy" aria-hidden="true" class="container-info-result-encrypt-text__img">
+            <p class="container-info-result-encrypt-text__paragrahp container-info-result-encrypt-text__paragrahp--size">
+                Ningún mensaje encontrado
+            </p>
+            <p class="container-info-result-encrypt-text__paragrahp">
+                Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+        </article>
+
+        <article class="container-info-result-encrypt-text container-info-result-encrypt-text--ocult container-info-result-encrypt-text--show" id="article-text-result">
+            <textarea id="result-encrypt-text" cols="30" rows="10" class="container-info-result-encrypt-text__textarea" readonly=""></textarea>
+
+            <button class="container-info-result-encrypt-text__btn" id="btn-limpiar-todo">
+                Limpiar
+            </button>
+
+            <button class="container-info-result-encrypt-text__btn container-info-result-encrypt-text__btn--color" id="btn-copiar-texto-encriptado"> 
+                Copiar
+            </button>
+        </article>
+    </section>
+</main>
+
+<footer class="container-footer">
+    <p class="container-info-footer">
+       
+       <a href="https://github.com/israelrojas-pixel" target="_blank" rel="noopener" class="container-info-footer__link">
+         Challengue encriptador 2024/ Israel Rojas
+        </a>
+       
+    </p>
+</footer>
+
+
+
+<lt-toolbar contenteditable="false" class="lt--mac-os" style="display: none;" data-lt-adjust-appearance="true" data-lt-force-appearance="light"><lt-div class="lt-toolbar__wrapper" style="left: 902px; position: absolute !important; top: 441px !important; bottom: auto !important; z-index: auto;"><lt-div class="lt-toolbar__extras lt-toolbar__extras--hide"><lt-span class="lt-toolbar__disable-icon"><lt-comp-icon class="lt-icon--disable lt-icon--clickable" data-lt-prevent-focus="true"><lt-span class="lt-icon__icon lt-icon__disable"></lt-span></lt-comp-icon></lt-span><lt-div class="lt-toolbar__divider"></lt-div><lt-div class="lt-toolbar__premium-icon"></lt-div><lt-span class="lt-toolbar__rephrasing-icon lt-toolbar__rephrasing-icon--disabled"><lt-comp-icon class="lt-icon--rephrasing lt-icon--clickable" data-lt-prevent-focus="true"><lt-span class="lt-icon__icon lt-icon__rephrasing"></lt-span></lt-comp-icon></lt-span><lt-span class="lt-toolbar__rephrasing-icon lt-toolbar__rephrasing-icon--disabled lt-toolbar__rephrasing-icon--hidden"><lt-comp-icon class="lt-icon--rephrasing lt-icon--clickable" data-lt-prevent-focus="true"><lt-span class="lt-icon__icon lt-icon__rephrasing"></lt-span></lt-comp-icon></lt-span></lt-div><lt-div class="lt-toolbar__status-icon lt-toolbar__status-icon--permission-required" title="No se puede revisar el texto. Confirma la política de privacidad antes."></lt-div><lt-div class="lt-toolbar__premium-icon-dot"></lt-div></lt-div></lt-toolbar>
+    
+</body>
+<script src="encriptador.js"></script>
+
+</html>
